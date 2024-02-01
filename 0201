@@ -1,0 +1,22 @@
+package pack_0201;
+import java.util.Scanner;
+
+//java-5-24
+public class ArrayEx {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int [] scores = new int[5];
+		int sum=0;
+		System.out.print("5개의 정수를 입력>>");	
+		for(int i=0; i<scores.length; i++) {
+			scores[i] = scan.nextInt();
+			sum += scores[i];
+		}
+		double average = sum/5;
+		System.out.println("배열 원소의 평균은 " + average);
+		scan.close();
+
+	}
+
+}
